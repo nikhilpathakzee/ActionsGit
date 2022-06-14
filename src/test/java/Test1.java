@@ -8,7 +8,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Test1
 {
     public WebDriver driver;
-    public String baseUrl = "https://www.lambdatest.com/";
+    public String baseUrl = "https://www.zee5.com/";
 
     @Test
     public void test1() {
@@ -25,6 +25,8 @@ public class Test1
         driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(baseUrl);
+        System.out.println("Went to ZEE5");
         driver.close();
+        System.out.println("Browser got closed");
     }
 }
