@@ -19,6 +19,7 @@ public class Test1
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--headless");
+        System.out.println("Test is running");
         driver = new ChromeDriver(options);
 
         driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
